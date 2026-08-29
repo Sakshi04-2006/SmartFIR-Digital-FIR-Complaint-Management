@@ -1,4 +1,0 @@
-SmartFIR UI/UX Prototype
-
-Figma Demo:
-https://dill-crate-45960357.figma.site/
