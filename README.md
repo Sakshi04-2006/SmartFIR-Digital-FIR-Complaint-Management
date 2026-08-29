@@ -1,82 +1,57 @@
-SmartFIR – Digital FIR Complaint Management System
-🚨 Overview
+````markdown
+# 🚨 SmartFIR
+## Digital FIR & Complaint Management System
 
-SmartFIR is a proposed digital platform designed to simplify and modernize complaint registration, FIR management, emergency detection, evidence handling, and communication between citizens and police authorities.
+> An intelligent, secure, and citizen-centric platform for digital complaint registration, FIR management, emergency detection, and evidence handling.
 
-The system aims to make the complaint process more accessible, transparent, secure, and efficient through AI-assisted processing, voice input, multilingual support, OCR, and centralized case management.
+---
 
-🎯 Problem Statement
+## 📌 Overview
 
-The traditional complaint and FIR registration process can involve several challenges:
+SmartFIR is a proposed digital platform that simplifies the process of complaint registration and FIR management by connecting citizens and police authorities through a unified system.
 
-Lengthy and manual complaint registration
-Language barriers between citizens and authorities
-Difficulty tracking complaint status
-Delays in identifying emergency situations
-Manual handling of documents and evidence
-Lack of centralized complaint and investigation management
-Difficulty extracting information from uploaded documents
-Limited transparency in the complaint lifecycle
+The platform combines **AI-assisted complaint processing, voice input, multilingual support, OCR, emergency detection, complaint tracking, and secure evidence management** to improve accessibility, transparency, and efficiency.
 
-SmartFIR aims to address these challenges through a unified digital platform.
+---
 
-💡 Proposed Solution
+## 🎯 Problem
 
-SmartFIR provides dedicated interfaces for citizens, police officers, emergency personnel, and station heads.
+Traditional complaint and FIR processes can involve:
 
-Citizens can submit complaints using text or voice. The system can process complaints using speech-to-text, language processing, AI-based classification, and emergency detection.
+- Manual and time-consuming complaint registration
+- Language barriers
+- Difficulty tracking complaint status
+- Delayed identification of emergency cases
+- Manual document and evidence handling
+- Limited coordination between citizens and police
+- Difficulty extracting information from documents
 
-Police authorities can manage complaints, FIRs, investigations, evidence, officers, and case status through centralized dashboards.
+### 💡 Our Approach
 
-⭐ Key Features
-👤 Citizen Module
-   User Registration and Login
-   Digital Complaint Registration
-   Voice-Based Complaint Submission
-   Speech-to-Text Conversion
-   Multilingual Complaint Support
-   Complaint ID Generation
-   Complaint Status Tracking
-   Notifications
-   Emergency Reporting
-🤖 AI-Assisted Processing
-   Complaint Classification
-   Emergency Detection
-   Natural Language Processing
-   Speech-to-Text Processing
-   AI-Assisted Complaint Analysis
-   AI Police Assistant
-📄 Document & OCR Processing
-   PDF Document Upload
-   OCR-Based Text Extraction
-   Document Content Processing
-   Automatic Extraction of Relevant Information
-   Digital Document Analysis
-   Evidence/Document Processing
-👮 Police Module
-   Police Dashboard
-   New Complaint Management
-   FIR Management
-   Investigation Management
-   Evidence Management
-   Officer Management
-   Emergency Alerts
-   Case Status Updates
-   Audit Activity Tracking
-🏢 Station Head Module
-   Station Head Dashboard
-   Officer Management
-   Complaint Monitoring
-   FIR Monitoring
-   Investigation Monitoring
-   Case Overview
-   Station-Level Activity Monitoring
-🚨 Emergency Management
-   Emergency Detection
-   Emergency Alerts
-   Emergency Center Dashboard
-   Priority-Based Complaint Handling
-🔄 System Workflow
+SmartFIR provides a centralized platform where citizens can submit complaints digitally while police authorities can verify, manage, investigate, and track cases through dedicated dashboards.
+
+---
+
+## ✨ Key Features
+
+- 📝 Digital Complaint Registration
+- 🎙️ Voice-Based Complaint Submission
+- 🌐 Multilingual Complaint Support
+- 🤖 AI-Based Complaint Classification
+- 🚨 Emergency Detection and Prioritization
+- 📄 PDF and OCR-Based Document Processing
+- 🔍 Complaint and FIR Status Tracking
+- 👮 Police Dashboard
+- 📁 Secure Evidence Management
+- 🏢 Station Head Dashboard
+- 🤖 AI Police Assistant
+- 🔐 Role-Based Access and Audit Logging
+
+---
+
+## 🔄 System Workflow
+
+```text
 Citizen
    ↓
 Login / Registration
@@ -89,15 +64,13 @@ Speech-to-Text
    ↓
 Language Processing
    ↓
-Complaint Classification
+AI Complaint Classification
    ↓
 Emergency Detection
    ↓
 Complaint ID Generation
    ↓
-Police Station
-   ↓
-Complaint Verification
+Police Verification
    ↓
 FIR Registration
    ↓
@@ -110,121 +83,153 @@ Evidence Management
 Status Updates
    ↓
 Case Resolution
-🏗️ Proposed System Architecture
-┌──────────────────────────────┐
-│           USERS              │
-│  Citizen | Police | Admin    │
-└──────────────┬───────────────┘
-               ↓
-┌──────────────────────────────┐
-│      APPLICATION LAYER       │
-│ Dashboards | Complaint UI    │
-└──────────────┬───────────────┘
-               ↓
-┌──────────────────────────────┐
-│       AI PROCESSING          │
-│ NLP | Classification | OCR   │
-│ Speech-to-Text | Detection   │
-└──────────────┬───────────────┘
-               ↓
-┌──────────────────────────────┐
-│      BACKEND SERVICES        │
-│ APIs | Authentication        │
-│ Complaint & FIR Management   │
-└──────────────┬───────────────┘
-               ↓
-┌──────────────────────────────┐
-│          DATABASE            │
-│ Users | Complaints | FIRs    │
-│ Evidence | Officers | Logs   │
-└──────────────────────────────┘
-🖥️ UI/UX Prototype
+````
 
-The current repository contains the UI/UX prototype and interface screenshots developed for SmartFIR.
+---
 
-Citizen Screens
-Home Screen
-Sign In
-Citizen Dashboard
-File a Complaint
-Track Complaint
-Notifications
-Emergency Alert
-Police Screens
-Police Dashboard
-New Complaint
-FIR Management
-Investigation
-Evidence Management
-Officer Management
-Audit Activity
-Station Head Screens
-Station Head Dashboard
-📸 Screenshots
-Citizen Dashboard
+## 📄 PDF & OCR Processing
 
-File a Complaint
+SmartFIR supports document-based information processing.
 
-Track Complaint
+```text
+PDF / Scanned Document
+          ↓
+         OCR
+          ↓
+   Text Extraction
+          ↓
+ Information Processing
+          ↓
+Complaint / Evidence Data
+```
 
-Notifications
+This helps extract relevant information from uploaded documents and makes it available for further complaint and evidence processing.
 
-Police Dashboard
+---
 
-Emergency Alert
+## 👤 Citizen Module
 
-New Complaint
+* Registration and Login
+* File a Complaint
+* Voice Complaint
+* Emergency Reporting
+* Complaint Tracking
+* Notifications
+* Complaint ID Generation
 
-FIR Management
+---
 
-Investigation
+## 👮 Police Module
 
-Evidence Management
+* Police Dashboard
+* Complaint Verification
+* FIR Management
+* Investigation Management
+* Evidence Management
+* Officer Management
+* Emergency Case Management
+* Audit Activity Tracking
 
-Audit Activity
+---
 
-Officer Management
+## 🏢 Station Head Module
 
-Station Head Dashboard
+* Station Dashboard
+* Complaint Monitoring
+* FIR Monitoring
+* Officer Management
+* Investigation Monitoring
+* Case Overview
+* Activity Monitoring
 
-Home Screen
+---
 
-Sign In
+## 🏗️ Proposed Architecture
 
-🛠️ Proposed Technology Stack
-Frontend
-Android / Web Application
-Responsive User Interface
-Backend
-REST APIs
-Authentication and Authorization
-Complaint and FIR Management Services
-Database
-MySQL / PostgreSQL
-AI & Processing
-Natural Language Processing
-Speech-to-Text
-OCR
-Complaint Classification
-Emergency Detection
-Security
-Role-Based Access Control
-Secure Authentication
-Encrypted Data Storage
-Audit Logs
-Secure Evidence Management
-🔐 Security Considerations
+```text
+              ┌─────────────────┐
+              │      USERS      │
+              │ Citizen / Police│
+              │  Station Head   │
+              └────────┬────────┘
+                       ↓
+              ┌─────────────────┐
+              │  APPLICATION    │
+              │   Dashboards    │
+              │  Complaint UI   │
+              └────────┬────────┘
+                       ↓
+        ┌──────────────┴──────────────┐
+        ↓                             ↓
+┌──────────────────┐        ┌──────────────────┐
+│   AI SERVICES    │        │ BACKEND SERVICES │
+│                  │        │                  │
+│ NLP              │        │ REST APIs        │
+│ Speech-to-Text   │        │ Authentication   │
+│ Classification   │        │ FIR Management   │
+│ Emergency Detect │        │ Complaint Mgmt.  │
+│ OCR              │        │ Evidence Mgmt.   │
+└────────┬─────────┘        └────────┬─────────┘
+         └──────────────┬────────────┘
+                        ↓
+               ┌─────────────────┐
+               │    DATABASE     │
+               │ Users           │
+               │ Complaints      │
+               │ FIRs            │
+               │ Evidence        │
+               │ Officers        │
+               │ Audit Logs      │
+               └─────────────────┘
+```
 
-SmartFIR is designed with security and privacy as important components.
+---
 
-Role-Based Access Control
-Secure Authentication
-Controlled Evidence Access
-Audit Activity Logging
-Secure Document Handling
-Data Encryption
-Police and Station-Level Access Control
-📂 Repository Structure
+## 🛠️ Proposed Technology Stack
+
+### Frontend
+
+* Android / Web Application
+* Responsive User Interface
+
+### Backend
+
+* REST APIs
+* Authentication and Authorization
+* Complaint Management
+* FIR Management
+
+### Database
+
+* MySQL / PostgreSQL
+
+### AI & Processing
+
+* Natural Language Processing
+* Speech-to-Text
+* OCR
+* Complaint Classification
+* Emergency Detection
+
+### Security
+
+* Role-Based Access Control
+* Secure Authentication
+* Data Encryption
+* Audit Logging
+* Controlled Evidence Access
+
+---
+
+## 📸 UI/UX Prototype
+
+The repository contains the SmartFIR UI/UX prototype and interface screenshots covering citizen, police, and station-head workflows.
+
+---
+
+## 📂 Repository Structure
+
+```text
 SmartFIR-Digital-FIR-Complaint-Management/
 │
 ├── README.md
@@ -242,57 +247,71 @@ SmartFIR-Digital-FIR-Complaint-Management/
 │   ├── 10-evidence.png
 │   ├── 11-audit-activity.png
 │   ├── 12-officer-management.png
-│   ├── 13-station-head-dashboard.png
-│   ├── Home-screen.png
-│   └── sign_in.png
+│   └── 13-station-head-dashboard.png
 │
 └── docs/
     └── SmartFIR-Presentation.pptx
-📚 Documentation
+```
 
-The project presentation and supporting material are available in the docs/ directory.
+---
 
-SmartFIR Project Presentation
-Problem Statement
-Proposed Solution
-System Architecture
-Project Workflow
-Feature Overview
-🚧 Current Project Status
+## 🚧 Current Status
 
-Current Phase: UI/UX Prototype
+**Phase: UI/UX Prototype**
 
-The current repository contains:
+### Completed
 
-UI/UX Designs
-Interface Screenshots
-Project Presentation
-Proposed System Architecture
-Feature Documentation
+* ✅ Project Concept
+* ✅ UI/UX Prototype
+* ✅ Citizen Interface
+* ✅ Police Interface
+* ✅ Station Head Interface
+* ✅ System Workflow
+* ✅ Proposed Architecture
+* ✅ Project Presentation
 
-The complete frontend, backend, database, AI services, OCR processing, and production deployment will be developed in subsequent phases.
+### Planned
 
-🚀 Future Development
-Frontend Implementation
-Backend API Development
-Database Integration
-Authentication and Authorization
-Speech-to-Text Integration
-OCR Implementation
-AI-Based Complaint Classification
-Emergency Detection
-Evidence Storage and Management
-Police Workflow Integration
-Testing and Security Validation
-Deployment
-🎯 Project Goal
+* ⏳ Frontend Development
+* ⏳ Backend APIs
+* ⏳ Database Integration
+* ⏳ Speech-to-Text Integration
+* ⏳ OCR Integration
+* ⏳ AI Classification
+* ⏳ Emergency Detection
+* ⏳ Evidence Management
+* ⏳ Testing and Deployment
 
-The goal of SmartFIR is to create a secure, intelligent, transparent, and citizen-friendly digital FIR management ecosystem that reduces manual processes and improves coordination between citizens and police authorities.
+---
 
-👥 Team
+## 🚀 Future Scope
 
-Team Paradox
+* Advanced AI-Based Complaint Analysis
+* Real-Time Emergency Alerts
+* Advanced OCR and Document Verification
+* Secure Digital Evidence Storage
+* Automated Case Prioritization
+* Analytics and Reporting
+* Mobile and Web Deployment
+* Integration with Authorized Police Systems
 
-📌 Project Status
+---
 
-🚧 SmartFIR is currently in the prototype and design phase. The repository will be continuously updated as the system progresses toward full implementation.
+## 📚 Documentation
+
+The project presentation and supporting material are available in the `docs/` directory.
+
+---
+
+## 👥 Team
+
+**Team Paradox**
+
+---
+
+## 📌 Disclaimer
+
+SmartFIR is currently a prototype/project implementation. The proposed AI, OCR, emergency detection, and police-system integrations require further development, testing, security validation, and appropriate authorization before real-world deployment.
+
+```
+```
